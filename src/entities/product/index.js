@@ -1,2 +1,2 @@
-export { getProducts, getProductById } from './api/productApi'
+export { getBestsellers, getPromotions } from './api/productApi'
 export { ProductCard } from './ui/ProductCard'

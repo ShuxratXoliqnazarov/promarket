@@ -1,1 +1,7 @@
 export { Container } from './Container'
+export { SectionTitle } from './SectionTitle'
+export { Button } from './Button'
+export { Badge } from './Badge'
+export { Rating } from './Rating'
+export { Carousel } from './Carousel'
+export { Logo } from './Logo'
