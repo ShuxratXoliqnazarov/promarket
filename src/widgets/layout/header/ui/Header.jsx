@@ -29,7 +29,7 @@ export function Header() {
 					<a href='tel:+74950183210' className='font-semibold'>
 						8 495 018-32-10
 					</a>
-					<RequestCallbackButton />
+					<RequestCallbackButton variant='link' />
 				</div>
 
 				<nav className='hidden gap-6 lg:flex'>
