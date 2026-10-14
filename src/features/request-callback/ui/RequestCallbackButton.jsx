@@ -26,7 +26,7 @@ export function RequestCallbackButton({ className = '' }) {
 			<button
 				type='button'
 				onClick={() => setOpen(true)}
-				className={`w-fit rounded-md border border-[#2D7DD2] px-4 py-2 text-xs font-bold tracking-wide text-[#2D7DD2] uppercase transition-colors hover:bg-[#2D7DD2] hover:text-white ${className}`}
+				className={`w-fit rounded-md border border-[#1C6EB4] px-4 py-2 text-xs font-bold tracking-wide text-[#1C6EB4] uppercase transition-colors hover:bg-[#1C6EB4] hover:text-white ${className}`}
 			>
 				Заказать звонок
 			</button>
@@ -49,7 +49,7 @@ export function RequestCallbackButton({ className = '' }) {
 								<button
 									type='button'
 									onClick={close}
-									className='mt-6 w-full rounded-md bg-[#2D7DD2] py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#00396B]'
+									className='mt-6 w-full rounded-md bg-[#1C6EB4] py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#00396B]'
 								>
 									Закрыть
 								</button>
@@ -76,11 +76,11 @@ export function RequestCallbackButton({ className = '' }) {
 									value={phone}
 									onChange={(e) => setPhone(e.target.value)}
 									placeholder='+7 (___) ___-__-__'
-									className='w-full rounded-md border border-gray-300 px-4 py-2.5 text-sm focus:border-[#2D7DD2] focus:outline-none'
+									className='w-full rounded-md border border-gray-300 px-4 py-2.5 text-sm focus:border-[#1C6EB4] focus:outline-none'
 								/>
 								<button
 									type='submit'
-									className='w-full rounded-md bg-[#2D7DD2] py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#00396B]'
+									className='w-full rounded-md bg-[#1C6EB4] py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#00396B]'
 								>
 									Перезвоните мне
 								</button>

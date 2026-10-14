@@ -19,7 +19,7 @@ const CATALOG_LINKS = [
 
 const INFO_LINKS = ['Оплата', 'Доставка', 'Поставщикам', 'Статьи', 'Контакты']
 
-const LINK_CLASS = 'text-sm text-[#2D7DD2] transition-colors hover:text-[#00396B]'
+const LINK_CLASS = 'text-sm text-[#1C6EB4] transition-colors hover:text-[#00396B]'
 
 function FooterNav({ items }) {
 	return (
@@ -35,12 +35,15 @@ function FooterNav({ items }) {
 
 function YandexRatingBadge() {
 	return (
-		<div className='flex items-center gap-3'>
+		<div className='flex flex-col items-start gap-1'>
 			<span className='text-sm leading-tight font-bold whitespace-nowrap'>
-				<span className='text-[#FF0000]'>Яндекс</span>
-				<span className='block text-[10px] font-normal text-gray-400'>маркет</span>
+				<span className='text-[#F71C1A]'>Яндекс</span>
+				<span className='block text-[11px] leading-tight font-normal text-[#F88A24]'>
+					маркет
+				</span>
 			</span>
-			<span className='rounded-2xl border border-orange-200 bg-orange-50 px-3 py-1.5 text-xs font-medium whitespace-nowrap text-gray-600'>
+			<span className='relative rounded-xl border border-[#F88A24] bg-orange-50 px-3 py-1.5 text-xs font-medium whitespace-nowrap text-gray-700'>
+				<span className='absolute -top-[5px] left-5 h-2.5 w-2.5 rotate-45 border-t border-l border-[#F88A24] bg-orange-50' />
 				Оцените магазин
 			</span>
 		</div>
@@ -57,7 +60,7 @@ export function Footer() {
 				<div className='flex flex-col gap-4'>
 					<a
 						href='tel:+74950183210'
-						className='text-xl font-bold text-[#1E212C] transition-colors hover:text-[#2D7DD2]'
+						className='text-xl font-bold text-[#1E212C] transition-colors hover:text-[#1C6EB4]'
 					>
 						8 495 018-32-10
 					</a>
@@ -85,7 +88,7 @@ export function Footer() {
 						<p className='mt-2 text-xs text-gray-400'>© 2020 ggpromarket.ru</p>
 					</div>
 
-					<div className='flex items-center gap-4 text-[#2D7DD2]'>
+					<div className='flex items-center gap-4 text-[#1C6EB4]'>
 						<a
 							href='#'
 							aria-label='WhatsApp'
@@ -122,11 +125,11 @@ export function Footer() {
 					</p>
 					<p>
 						Сайт использует технологию cookie. Используя сайт, Вы соглашаетесь с{' '}
-						<a href='#' className='text-[#2D7DD2] hover:underline'>
+						<a href='#' className='text-[#1C6EB4] hover:underline'>
 							правилами использования cookie
 						</a>
 						, а также даёте{' '}
-						<a href='#' className='text-[#2D7DD2] hover:underline'>
+						<a href='#' className='text-[#1C6EB4] hover:underline'>
 							согласие на обработку персональных данных
 						</a>
 					</p>
