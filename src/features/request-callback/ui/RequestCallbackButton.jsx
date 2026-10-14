@@ -1,13 +1,11 @@
-/**
- * @feature: Заказать звонок
- * Figma: ссылка в шапке и кнопка в подвале
- * Где: виджеты Header, Footer
- */
 export function RequestCallbackButton() {
+	function handleClick() {
+		alert('Спасибо! Мы скоро вам перезвоним')
+	}
+
 	return (
-		<div data-feature='request-callback'>
-			{/* TODO: Заказать звонок */}
-			<p className='text-gray-400'>RequestCallbackButton</p>
-		</div>
+		<button onClick={handleClick} className='border-b border-dashed text-xs text-primary'>
+			Заказать звонок
+		</button>
 	)
 }

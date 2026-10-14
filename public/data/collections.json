@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Сияние", "brand": "Kerama Marazzi", "image": "https://picsum.photos/seed/tile1/800/800" },
+  { "id": 2, "name": "Вестанвинд", "brand": "LB-Ceramics", "image": "https://picsum.photos/seed/tile2/600/400" },
+  { "id": 3, "name": "Rotterdam", "brand": "Gracia Ceramica", "image": "https://picsum.photos/seed/tile3/600/400" },
+  { "id": 4, "name": "Rane", "brand": "Alma Ceramica", "image": "https://picsum.photos/seed/tile4/600/400" },
+  { "id": 5, "name": "Гинардо", "brand": "Kerama Marazzi", "image": "https://picsum.photos/seed/tile5/600/400" }
+]

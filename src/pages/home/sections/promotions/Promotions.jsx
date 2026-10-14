@@ -1,13 +1,22 @@
-/**
- * @section: Акции
- * Figma: табы категорий + карусель товаров с бейджем «АКЦИЯ» и старой ценой
- * Использует: features/filter-by-category, entities/product, features/add-to-cart, features/toggle-favorite, features/quick-view, shared/ui/Carousel
- */
+import { useEffect, useState } from 'react'
+import { getProducts } from '@/entities/product'
+import { Container } from '@/shared/ui'
+import { ProductSlider } from '@/widgets/product-slider'
+
 export function Promotions() {
+	const [products, setProducts] = useState([])
+
+	useEffect(() => {
+		getProducts().then((data) => setProducts(data))
+	}, [])
+
+	const sales = products.filter((product) => product.oldPrice)
+
 	return (
-		<section data-section='promotions'>
-			{/* TODO: Акции */}
-			<p className='text-gray-400'>Promotions</p>
+		<section data-section='promotions' className='bg-[#e8f1fb] py-10'>
+			<Container>
+				<ProductSlider title='Акции' products={sales} />
+			</Container>
 		</section>
 	)
 }

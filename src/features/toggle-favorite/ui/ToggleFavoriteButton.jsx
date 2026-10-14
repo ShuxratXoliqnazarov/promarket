@@ -1,13 +1,12 @@
-/**
- * @feature: Избранное
- * Figma: сердечко в правом верхнем углу карточки товара
- * Где: секции pages/home: Bestsellers, Promotions
- */
-export function ToggleFavoriteButton({ productId }) {
+import { useState } from 'react'
+import { Heart } from 'lucide-react'
+
+export function ToggleFavoriteButton() {
+	const [isFavorite, setIsFavorite] = useState(false)
+
 	return (
-		<div data-feature='toggle-favorite'>
-			{/* TODO: Избранное */}
-			<p className='text-gray-400'>ToggleFavoriteButton</p>
-		</div>
+		<button onClick={() => setIsFavorite(!isFavorite)} className='text-primary'>
+			<Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} />
+		</button>
 	)
 }

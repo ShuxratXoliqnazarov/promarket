@@ -1,13 +1,17 @@
-/**
- * @feature: Табы категорий
- * Figma: «Любые товары», «Раковины», «Ванны»… над каруселями
- * Где: секции pages/home: Bestsellers, Promotions
- */
-export function CategoryTabs({ active, onChange }) {
+export function CategoryTabs({ tabs, active, onChange }) {
 	return (
-		<div data-feature='filter-by-category'>
-			{/* TODO: Табы категорий */}
-			<p className='text-gray-400'>CategoryTabs</p>
+		<div className='mb-4 flex flex-wrap gap-2'>
+			{tabs.map((tab) => (
+				<button
+					key={tab.id}
+					onClick={() => onChange(tab.id)}
+					className={`rounded-sm px-3 py-1 text-xs transition ${
+						active === tab.id ? 'bg-accent text-white' : 'bg-white text-primary hover:bg-accent/10'
+					}`}
+				>
+					{tab.name}
+				</button>
+			))}
 		</div>
 	)
 }

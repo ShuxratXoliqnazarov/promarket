@@ -1,13 +1,14 @@
-/**
- * @feature: Быстрый просмотр
- * Figma: кнопка «БЫСТРЫЙ ПРОСМОТР» при наведении на карточку
- * Где: секции pages/home: Bestsellers, Promotions
- */
-export function QuickViewButton({ productId }) {
+export function QuickViewButton({ product }) {
+	function handleClick() {
+		alert(product.title)
+	}
+
 	return (
-		<div data-feature='quick-view'>
-			{/* TODO: Быстрый просмотр */}
-			<p className='text-gray-400'>QuickViewButton</p>
-		</div>
+		<button
+			onClick={handleClick}
+			className='bg-primary/80 px-4 py-2 text-[10px] font-semibold text-white uppercase hover:bg-primary'
+		>
+			Быстрый просмотр
+		</button>
 	)
 }

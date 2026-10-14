@@ -1,0 +1,14 @@
+{
+  "slides": [
+    { "id": 1, "title": "Смесители Raiber", "subtitle": "уже в наличии" },
+    { "id": 2, "title": "Ванны Riho", "subtitle": "скидки до 30%" },
+    { "id": 3, "title": "Душевые системы Grohe", "subtitle": "новая коллекция" },
+    { "id": 4, "title": "Плитка Kerama Marazzi", "subtitle": "более 500 коллекций" },
+    { "id": 5, "title": "Унитазы Roca", "subtitle": "бесплатная доставка" }
+  ],
+  "promos": [
+    { "id": 1, "title": "Унитазы до 10 000 ₽", "color": "dark" },
+    { "id": 2, "title": "Товары со скидкой", "color": "accent" }
+  ],
+  "wide": { "title": "Ещё один баннер" }
+}

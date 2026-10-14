@@ -1,4 +1,6 @@
 import { api } from '@/shared/api'
 
-// @entity-api: Бренд
-export const getBrands = () => api.get('/brands').then((res) => res.data)
+export async function getBrands() {
+	const res = await api.get('/brands.json')
+	return res.data
+}

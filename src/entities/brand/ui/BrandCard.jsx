@@ -1,12 +1,10 @@
-/**
- * @entity: Бренд — BrandCard
- * Figma: белая карточка с логотипом бренда
- */
 export function BrandCard({ brand }) {
 	return (
-		<div data-entity='brand'>
-			{/* TODO: Бренд — BrandCard */}
-			<p className='text-gray-400'>BrandCard</p>
-		</div>
+		<a
+			href='#'
+			className='flex h-24 items-center justify-center bg-white px-4 text-center text-lg font-bold text-gray-700 transition hover:shadow-md'
+		>
+			{brand.name}
+		</a>
 	)
 }

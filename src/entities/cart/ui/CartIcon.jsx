@@ -1,12 +1,14 @@
-/**
- * @entity: Корзина — CartIcon
- * Figma: иконка корзины с жёлтым счётчиком в шапке
- */
+import { ShoppingCart } from 'lucide-react'
+
 export function CartIcon({ count }) {
 	return (
-		<div data-entity='cart'>
-			{/* TODO: Корзина — CartIcon */}
-			<p className='text-gray-400'>CartIcon</p>
-		</div>
+		<a href='#' className='relative text-primary'>
+			<ShoppingCart size={24} />
+			{count > 0 && (
+				<span className='absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-hit text-[10px] font-bold text-black'>
+					{count}
+				</span>
+			)}
+		</a>
 	)
 }

@@ -1,13 +1,22 @@
-/**
- * @section: Хиты продаж
- * Figma: табы категорий + карусель карточек товаров с бейджем «ХИТ»
- * Использует: features/filter-by-category, entities/product, features/add-to-cart, features/toggle-favorite, features/quick-view, shared/ui/Carousel
- */
+import { useEffect, useState } from 'react'
+import { getProducts } from '@/entities/product'
+import { Container } from '@/shared/ui'
+import { ProductSlider } from '@/widgets/product-slider'
+
 export function Bestsellers() {
+	const [products, setProducts] = useState([])
+
+	useEffect(() => {
+		getProducts().then((data) => setProducts(data))
+	}, [])
+
+	const hits = products.filter((product) => product.isHit)
+
 	return (
-		<section data-section='bestsellers'>
-			{/* TODO: Хиты продаж */}
-			<p className='text-gray-400'>Bestsellers</p>
+		<section data-section='bestsellers' className='py-8'>
+			<Container>
+				<ProductSlider title='Хиты продаж' products={hits} />
+			</Container>
 		</section>
 	)
 }

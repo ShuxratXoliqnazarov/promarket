@@ -1,2 +1,2 @@
-export { getCart, addToCart } from './api/cartApi'
+export { getCart } from './api/cartApi'
 export { CartIcon } from './ui/CartIcon'

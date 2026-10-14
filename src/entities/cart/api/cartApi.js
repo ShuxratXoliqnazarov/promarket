@@ -1,6 +1,6 @@
 import { api } from '@/shared/api'
 
-// @entity-api: Корзина
-export const getCart = () => api.get('/cart').then((res) => res.data)
-
-export const addToCart = (productId) => api.post('/cart', { productId }).then((res) => res.data)
+export async function getCart() {
+	const res = await api.get('/cart.json')
+	return res.data
+}

@@ -1,4 +1,8 @@
-// @shared-ui: логотип (шапка, подвал)
 export function Logo() {
-	return <span className='text-2xl font-bold text-blue-600'>GG PROMARKET</span>
+	return (
+		<a href='/' className='flex text-xl font-bold text-white'>
+			<span className='rounded-l bg-primary px-2'>GG</span>
+			<span className='rounded-r bg-sale px-2'>PROMARKET</span>
+		</a>
+	)
 }

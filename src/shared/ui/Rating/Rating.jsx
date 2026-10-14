@@ -1,4 +1,13 @@
-// @shared-ui: звёзды рейтинга в карточке товара
-export function Rating({ value = 0 }) {
-	return <div aria-label={`Рейтинг ${value}`}>{'★'.repeat(Math.round(value))}</div>
+export function Rating({ value }) {
+	const stars = [1, 2, 3, 4, 5]
+
+	return (
+		<div className='flex text-sm'>
+			{stars.map((star) => (
+				<span key={star} className={star <= value ? 'text-hit' : 'text-gray-300'}>
+					★
+				</span>
+			))}
+		</div>
+	)
 }

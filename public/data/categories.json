@@ -1,0 +1,10 @@
+[
+  { "id": "sinks", "name": "Раковины" },
+  { "id": "baths", "name": "Ванны" },
+  { "id": "toilets", "name": "Унитазы" },
+  { "id": "showers", "name": "Душевые системы" },
+  { "id": "mixers", "name": "Смесители" },
+  { "id": "mirrors", "name": "Зеркала" },
+  { "id": "cabins", "name": "Душевые кабины" },
+  { "id": "dryers", "name": "Полотенцесушители" }
+]
